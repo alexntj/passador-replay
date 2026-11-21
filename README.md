@@ -1,35 +1,13 @@
-# Passador Replay
+# Passador Replay v4
 
-Aplicativo Android para copiar arquivos de replay entre duas pastas escolhidas pelo usuário.
-
-## Build no GitHub
-
-1. Crie um repositório vazio no GitHub.
-2. Copie o conteúdo desta pasta para a raiz do repositório.
-3. Faça push para `main`.
-4. Abra a aba **Actions**.
-5. Baixe o artefato `passador-replay-debug` ao final do workflow.
-
-## Build local
-
-Com JDK 17 e Gradle 8.9 instalados:
-
-```powershell
-gradle --no-daemon assembleDebug
-```
-
-APK gerado:
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
-```
+Versão visual vermelha/preta baseada no ZIP v4, compilada como app Android seguro.
 
 ## Uso
 
-1. Toque em **Começar**.
-2. Escolha a pasta de origem.
-3. Escolha a pasta de destino.
-4. Selecione a direção desejada.
-5. Toque em **Copiar replays**.
+1. Toque em **Abrir opções de desenvolvedor** se precisar consultar a depuração sem fio.
+2. Toque em **Já conectei**.
+3. Escolha a direção visual da transferência.
+4. Selecione manualmente a pasta de origem e a pasta de destino.
+5. Toque em **Passar replay**.
 
-O app usa o Storage Access Framework, não acessa pastas sem consentimento do usuário e não executa comandos ADB, bypass ou desinstalação automática.
+A cópia usa o Storage Access Framework e requer autorização explícita do usuário para cada pasta. O app não usa acesso amplo ao armazenamento, ADB, bypass, auto-desinstalação ou comandos em outros aplicativos.
