@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp" android:background="#0B0F14">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="PASSADOR REPLAY" android:textColor="#69F0AE" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Copie replays entre duas pastas" android:textColor="#FFFFFF" android:textSize="25sp" android:fontFamily="sans-serif-medium" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Escolha manualmente as pastas de origem e destino." android:textColor="#8A93A0" android:textSize="14sp" />
+    <Button android:id="@+id/btnSource" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="32dp" android:background="@drawable/btn_primary" android:text="ESCOLHER ORIGEM" android:textColor="#0B0F14" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+    <TextView android:id="@+id/tvSource" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Origem: não selecionada" android:textColor="#B0BEC5" android:textSize="12sp" />
+    <Button android:id="@+id/btnDestination" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="20dp" android:background="@drawable/btn_primary" android:text="ESCOLHER DESTINO" android:textColor="#0B0F14" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+    <TextView android:id="@+id/tvDestination" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Destino: não selecionado" android:textColor="#B0BEC5" android:textSize="12sp" />
+    <Button android:id="@+id/btnTransfer" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="28dp" android:background="@drawable/btn_primary" android:enabled="false" android:text="COPIAR REPLAYS" android:textColor="#0B0F14" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+    <ScrollView android:id="@+id/logScroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="20dp" android:background="#11161D" android:padding="14dp">
+        <TextView android:id="@+id/logBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#B0BEC5" android:textSize="12sp" android:fontFamily="monospace" />
+    </ScrollView>
+</LinearLayout>
